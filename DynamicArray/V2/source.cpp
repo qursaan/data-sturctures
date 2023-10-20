@@ -19,7 +19,7 @@ public:
         delete[] data;
     }
 
-    // Copy constructor without std::copy
+    // Copy constructor
     DynamicArray(const DynamicArray<T>& other) : size(other.size), capacity(other.capacity) {
         data = new T[capacity];
         for (size_t i = 0; i < size; ++i) {
@@ -27,7 +27,7 @@ public:
         }
     }
 
-    // Assignment operator without std::copy
+    // Assignment operator 
     DynamicArray& operator=(const DynamicArray<T>& other) {
         if (this != &other) {
             delete[] data;
@@ -41,7 +41,7 @@ public:
         return *this;
     }
 
-    // Function to resize the dynamic array
+    // Resize the dynamic array
     void resize(size_t newSize) {
         if (newSize <= 0) {
             throw std::invalid_argument("Invalid new size");
@@ -60,7 +60,7 @@ public:
         size = newSize;
     }
 
-    // Function to access elements of the array by index
+    // Access elements of the array by index
     T& operator[](size_t index) {
         if (index >= size) {
             throw std::out_of_range("Index out of range");
@@ -76,7 +76,7 @@ public:
     // Insert an element at the end
     void insertEnd(const T& value) {
         if (size == capacity) {
-            resize(2 * capacity); // Double the capacity if full
+            resize(2 * capacity); // resize the capacity if full
         }
         data[size++] = value;
     }
@@ -84,7 +84,7 @@ public:
     // Insert an element at the beginning
     void insertFront(const T& value) {
         if (size == capacity) {
-            resize(2 * capacity); // Double the capacity if full
+            resize(2 * capacity); // resize the capacity if full
         }
         // Shift elements to the right
         for (size_t i = size; i > 0; --i) {
