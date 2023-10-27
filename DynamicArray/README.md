@@ -41,3 +41,24 @@
    - Verify that elements are inserted correctly.
    - Remove elements from both the end and the beginning.
    - Ensure that elements are removed in the correct order.
+
+## Task 3
+
+1. Resize Function:
+   - Update the *resize* function to automatically double the size if needed when inserting new elements, and shrink the size if needed when removing elements.
+   - You may choose a resizing strategy, such as doubling or halving the size, when the array reaches its capacity..
+2. Startup Capacity
+   - Start the array with an initial capacity of *2*.
+3. Add Function:
+   - Implement a function named *add* that allows inserting an element at any specified location within the array.
+   - Resize if needed.
+   - Ensure you handle index out of range errors for this function as well.
+4. Remove Functions
+   - Implement a function named remove to remove an element from any specified location within the array.
+   - Shrink if needed.
+   - Handle index out of range errors for this function.
+5. Testing and Demonstration:
+   - Create a DynamicArray and insert elements at the end, the beginning, and any specified location.
+   - Verify that elements are inserted correctly and that resizing works as expected.
+   - Remove elements from the end, the beginning, and any specified location.
+   - Ensure that elements are removed in the correct order and that resizing works as expected when elements are removed.
