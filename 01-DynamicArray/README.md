@@ -1,6 +1,6 @@
 # DynamicArray Project
 
-## Task 1: Create a DynamicArray template class
+## Task 1
 
 - Create a C++ template class called DynamicArray to represent a dynamic array of elements.
 
