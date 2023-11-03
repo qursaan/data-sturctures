@@ -2,4 +2,5 @@
 
 ## Table of Contents
 
-- [DynamicArray Project](DynamicArray/README.md)
+- [DynamicArray Project](01-DynamicArray/README.md)
+- [LinkedList Project](02-LinkedList/README.md)
