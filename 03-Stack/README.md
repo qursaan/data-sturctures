@@ -22,4 +22,3 @@
 6. Testing and Demonstration
    - Create an instance of the Stack class for a specific data type (int).
    - Test the towerOfHanoi function with a different number of disks and demonstrate the movement of disks from the source rod to the destination rod.
-

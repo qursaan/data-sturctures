@@ -4,3 +4,6 @@
 
 - [DynamicArray Task](01-DynamicArray/README.md)
 - [LinkedList Task](02-LinkedList/README.md)
+- [Stack Task](03-Stack/README.md)
+- [Queue Task](04-Queue/README.md)
+
