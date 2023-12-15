@@ -6,4 +6,5 @@
 - [LinkedList Task](02-LinkedList/README.md)
 - [Stack Task](03-Stack/README.md)
 - [Queue Task](04-Queue/README.md)
+- [HashTable Task](05-HashTable/README.md)
 
