@@ -37,7 +37,7 @@ public:
         delete[] data;
         data = newData;
         capacity = newCapacity;
-        size = newSize;  // Be cautious with how this affects existing data!
+        size = newSize; 
     }
 
     // Function to get the current size of the array
@@ -56,7 +56,7 @@ public:
             throw std::out_of_range("Index out of range");
         }
         if (index >= size) {
-            size = index + 1; // Update size to reflect the highest index + 1
+            size = index + 1; 
         }
         data[index] = value;
     }
@@ -71,7 +71,7 @@ public:
 };
 
 int main() {
-    DynamicArray<int> intArray(20); // Create a DynamicArray of integers
+    DynamicArray<int> intArray(20); 
 
     // Fill array
     for (size_t i = 0; i < intArray.getCapacity(); ++i) {
